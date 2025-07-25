@@ -90,7 +90,8 @@ async def cmd_lunch(message: types.Message):
             user_id,
             f"✅ Время обеда установлено на {time_str}\n"
             f"Уведомления придут на следующий рабочий день"
-        )git init
+        )
+
     elif time_until_lunch.total_seconds() <= 300:  # Меньше 5 минут
         total_seconds = int(time_until_lunch.total_seconds())
         minutes = total_seconds // 60
